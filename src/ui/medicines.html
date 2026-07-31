@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaLink — الأدوية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>PharmaLink OS</h1>
+  </header>
+  <nav class="app-nav" id="app-nav"></nav>
+
+  <main>
+    <div id="medicines-status"></div>
+
+    <section class="card">
+      <h2>إضافة / تعديل دواء</h2>
+      <form id="medicine-form" class="form-grid">
+        <label for="name">اسم الدواء *</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="category">الفئة *</label>
+        <input type="text" id="category" name="category" placeholder="مثال: نقص، سرطان، هرمونات" required />
+
+        <label for="unit">الوحدة *</label>
+        <input type="text" id="unit" name="unit" placeholder="مثال: علبة، شريط" required />
+
+        <label for="company">الشركة المصنّعة</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="barcode">الباركود</label>
+        <input type="text" id="barcode" name="barcode" />
+
+        <label for="activeIngredient">المادة الفعّالة</label>
+        <input type="text" id="activeIngredient" name="activeIngredient" />
+
+        <label for="notes">ملاحظات</label>
+        <textarea id="notes" name="notes" rows="2"></textarea>
+
+        <div>
+          <button type="submit" class="primary-btn">إضافة دواء</button>
+          <button type="button" class="secondary-btn" data-action="cancel-edit" hidden>إلغاء التعديل</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>قائمة الأدوية</h2>
+      <div id="medicines-table-container"></div>
+    </section>
+  </main>
+
+  <script type="module" src="medicines.js"></script>
+</body>
+</html>

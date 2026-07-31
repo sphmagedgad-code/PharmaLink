@@ -1,0 +1,169 @@
+/* src/ui/styles.css
+   PharmaLink OS — Shared UI Styles (V1)
+   Plain CSS only. Mobile-first (target device: low-end Android, small screen). */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+  direction: rtl;
+}
+
+header.app-header {
+  background: #0b6e4f;
+  color: #fff;
+  padding: 12px 16px;
+}
+
+header.app-header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+nav.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav.app-nav a {
+  text-decoration: none;
+  color: #0b6e4f;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #eaf6f1;
+}
+
+nav.app-nav a[aria-current="page"] {
+  background: #0b6e4f;
+  color: #fff;
+  font-weight: bold;
+}
+
+main {
+  padding: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.stat {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stat .value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0b6e4f;
+}
+
+.stat .label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.status-message {
+  font-size: 0.85rem;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.status-message.loading {
+  background: #fff8e1;
+  color: #8a6d00;
+}
+
+.status-message.error {
+  background: #fdecea;
+  color: #b3261e;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+table.data-table th,
+table.data-table td {
+  text-align: right;
+  padding: 6px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+button.primary-btn {
+  background: #0b6e4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+button.secondary-btn {
+  background: #eee;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+form.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form.form-grid label {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+form.form-grid input,
+form.form-grid select,
+form.form-grid textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.error-text {
+  color: #b3261e;
+  font-size: 0.78rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaLink — الرئيسية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>PharmaLink OS</h1>
+  </header>
+  <nav class="app-nav" id="app-nav"></nav>
+
+  <main>
+    <div id="dashboard-status"></div>
+
+    <section class="card">
+      <h2>نظرة عامة</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="value" id="stat-medicines">—</div>
+          <div class="label">الأدوية</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-suppliers">—</div>
+          <div class="label">الموردين</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-deals">—</div>
+          <div class="label">إجمالي الصفقات</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-completed-deals">—</div>
+          <div class="label">صفقات مكتملة</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-profit">—</div>
+          <div class="label">إجمالي الربح</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>رسائل واتساب المصنّفة</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="value" id="stat-whatsapp-buy">—</div>
+          <div class="label">طلبات شراء</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-whatsapp-sell">—</div>
+          <div class="label">عروض بيع</div>
+        </div>
+        <div class="stat">
+          <div class="value" id="stat-whatsapp-unknown">—</div>
+          <div class="label">غير مصنّفة</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
